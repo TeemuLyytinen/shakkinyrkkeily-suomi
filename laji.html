@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laji - Shakkinyrkkeily Suomi</title>
+    <style>
+        body{
+            margin: 0;
+            font-family:  Arial, Helvetica, sans-serif;
+            background-color:  black;
+            color:#e6b11d;
+        }
+     .hero {
+           text-align: center;
+           background-color: black;
+           padding:  0;
+           } 
+           
+         .hero img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #e6b11d;
+            text-shadow: 0 6px 12px rgba(0,0,0,0.9);
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: none;
+            padding: 10px 15px;
+        }
+        #menu-toggle {
+            display: none; 
+        }
+        .menu {
+            position: fixed; 
+            top: 0;
+            right: -100vw;
+            width: 100%;
+            height: 65vh;
+            background: rgba(0, 0, 0, 0.95);
+            transition: right 0.3s ease;
+            padding-top: 160px;
+        }
+        #menu-toggle:checked ~ .menu {
+            right: 0; 
+        }
+        .menu-icon  {
+            
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            font-size: 3rem;
+            color:#e6b11d;
+            cursor: pointer;
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            background: rgba(0, 0, 0, 0.45);
+            padding: 4px 8px;
+            border-radius: 10px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            margin: 20px 0; 
+        }
+        .menu a {
+            text-decoration: none;
+            color: #e6b11d
+        }
+        figure img {
+            width: 100%;
+            height: 100%
+        }
+                    </style>
+</head>
+
+<body> 
+    
+<header class="hero">
+    <img src="images/chessboxing_main.png"
+    alt="Shakkinyrkkeily"> 
+    <input type="checkbox"
+    id="menu-toggle">
+    <label for="menu-toggle"
+    class="menu-icon">
+        &#9776;
+</label>
+<nav class= "menu">
+    <ul>
+             <li><a href="index.html"> Etusivu</a></li>
+
+            <li><a href="laji.html"> Laji</a></li>
+
+            <li><a href="historia.html"> Historia ja tausta</a></li>
+            
+            <li><a href="maailma.html"> Maailmalla ja Suomessa</a></li> 
+            
+            <li><a href="lisätietoa.html"> Lisätietoa</a></li> 
+            
+        </ul>
+        </nav>
+
+        <h1> Shakkinyrkkeily Suomi</h1>  
+        </header> 
+        <main>
+            <section>
+                <h2> Mitä on shakkinyrkkeily?</h2>
+                <p>
+                    Shakkinyrkkeily on laji, jossa yhdistyvät kaksi erilaista maailmaa: älyllinen strategiapeli shakki
+                    ja fyysinen kamppailulaji nyrkkeily. Ottelussa vuorotellaan shakkierien ja nyrkkeilyerien välillä. 
+                    Laji vaatii kilpailijalta kykyä hallita sekä fyysistä rasitusta että tarkkaa keskittymistä edellyttävää 
+                    strategista ajattelua. Ottelun aikana kilpailijan on sopeuduttava nopeasti muuttuviin tilanteeseen ja
+                    vaihdettava ajattelutapaa intensiivisen kamppailun ja rauhallisen pelistrategian välillä.
+                </p>
+                <h2>Säännöt</h2>
+                <p>
+                    Shakkinyrkkeilyottelu koostuu enintään yhdestätoista erästä, joista kuusi on shakkia ja viisi nyrkkeilyä.
+                    Ottelu alkaa shakkierällä ja päättyy tarvittaessa viimeiseen shakkierään. 
+                </p>
+                <p> 
+                    Shakkierät kestävät neljä minuuttia kerrallaan ja nyrkkeilyerät 3 minuuttia. Erien välillä on minuutin tauko
+                    jonka aikana varusteet vaihdetaan. Shakin aikana pelaajat käyttävät kuulosuojamia jotta he eivät kuule yleisöltä
+                    ohjeita. Pelaajilla on rajattu kokonaisaika (12 min) shakkisiirtojen tekemiseen. Tahallisesta ajanpeluusta seuraa
+                    10 sekunnin ajanmenetysrangaistus. Nyrkkeily käydään amatööri -tai ammattinyrkkeilysäännöin. 
+                    Otteluissa ja turnauksissa shakkikellon kokonaisajassa sekä siirtojen tekemiseen varatussa ajassa voi olla poikkeuksia.
+                </p>
+                <p>
+                    Ottelu voidaan ratkaista seuraavilla tavoilla:
+                    tekemällä shakkimatti, shakkikellon ajan loppumisella, tyrmäyksellä, hylkäyksellä, luovutuksella tai tuomariäänin. Mikäli shakki päättyy
+                    tasapeliin eikä nyrkkeilyssä saavuteta selkeää ratkaisua, voittaja määräytyy nyrkkeilyn pisteytyksen perusteella. 
+                </p>
+                <p> 
+                    Kilpailutasolla ottelijoilta edellytetään usein vähintään noin 1600 FIDE-pistelukua, jotta shakkierät voidaan pelata riittävä tasokkaasti.
+                </p>
+                <figure>
+                <img src="images/chessboxing1.jpg"
+                alt=" Shakkinyrkkeilyottelu, kilpailijat kehässä ja shakkilauta etulalla">
+                        <figcaption>
+                            Kuva: WCBO / Wikimedia Commons (CC By 3.0DE)
+                        </figcaption>
+                </figure>        
+
+                 </section>
+        </main>
+
+            
+            </body>

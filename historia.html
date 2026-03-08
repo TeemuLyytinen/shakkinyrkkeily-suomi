@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia ja tausta - Shakkinyrkkeily Suomi</title>
+    <style>
+        body{
+            margin: 0;
+            font-family:  Arial, Helvetica, sans-serif;
+            background-color:  black;
+            color:#e6b11d;
+        }
+            
+       .hero {
+           text-align: center;
+           background-color: black;
+           padding:  0;
+           } 
+
+         .hero img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }   
+        
+        
+        #menu-toggle {
+            display: none; 
+        }
+        .menu {
+            position: fixed; 
+            top: 0;
+            right: -100vw;
+            width: 100%;
+            height: 65vh;
+            background: rgba(0, 0, 0, 0.95);
+            transition: right 0.3s ease;
+            padding-top: 160px;
+        }
+        #menu-toggle:checked ~ .menu {
+            right: 0; 
+        }
+        .menu-icon  {
+            
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            font-size: 3rem;
+            color:#e6b11d;
+            cursor: pointer;
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            background: rgba(0, 0, 0, 0.45);
+            padding: 4px 8px;
+            border-radius: 10px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            margin: 20px 0; 
+        }
+        .menu a {
+            text-decoration: none;
+            color: #e6b11d
+        }
+
+        @media (min-width: 1024px) 
+        {
+          
+            .hero img {
+                object-fit: cover;
+                object-position: 70% center;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+        }
+        figure {
+                margin: 30px auto;
+                text-align: center;
+                max-width: 800px;
+            }
+            figure img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            figcaption {
+                margin-top: 10px;
+                font-size: 1.0rem;
+                color:#e6b11d;
+            }
+                
+                    </style>
+</head>
+
+<body> 
+    
+<header class="hero">
+    <img src="images/chessboxing_main.png"
+    alt="Shakkinyrkkeily"> 
+    <input type="checkbox"
+    id="menu-toggle">
+    <label for="menu-toggle"
+    class="menu-icon">
+        &#9776;
+</label>
+<nav class= "menu">
+    <ul>
+             <li><a href="index.html"> Etusivu</a></li>
+
+            <li><a href="laji.html"> Laji</a></li>
+
+            <li><a href="historia.html"> Historia ja tausta</a></li>
+            
+            <li><a href="maailma.html"> Maailmalla ja Suomessa</a></li>  
+            
+            <li><a href="lisätietoa.html"> Lisätietoa</a></li>  
+
+        </ul>
+        </nav>
+        </header>
+        
+         <section class="content">
+        
+            <h2>Historia ja tausta</h2>
+            <p>
+                Ranskalaisen taiteilijan Enki Bilalin vuonna 1992 julkaistussa sarjakuvassa laji esitettiin osana dystooppista
+                tulevaisuutta, jossa äly ja fyysinen voima kohtasivat samassa areenassa. Vaikka idea oli aluksi fiktiivinen, se herätti
+                kiinnostusta omaperäisyytensä vuoksi.
+            </p>
+            <p>
+                Hollantilainen performanssitaiteilija Iepe Rubingh vei ajatuksen käytäntöön 2000-luvun alussa. Ensimmäinen virallinen
+                shakkinyrkkeilyottelu järjestettiin Berliinissä vuonna 2003. Rubingh perusti myöhemmin World Chess Boxing Organization
+                (WCBO), joka alkoi kehittää lajille yhtenäisiä sääntöjä ja kilpailujärjestelmää.
+            </p>
+            <p>
+                2000-luvun puolivälistä lähtien lajia on järjestetty erityisesti Saksassa, Iso-Britanniassa, Alankomaissa ja Venäjällä.
+                Vaikka shakkinyrkkeily on pysynyt verrattain marginaalisena lajina, se on saavuttanut kansainvälistä näkyvyyttä ainutlaatuisena
+                yhdistelmälajin, joka yhdistää strategisen ajattelun ja intensiivisen fyysisen kamppailun.
+            </p>
+            </section>
+
+            <figure>
+                <img src="images/chessboxing3.jpg"
+                alt="Mustavalkoinen shakkilauta">
+                        <figcaption>
+                            Kuva: Felix Mittermeier / Pexels
+                        </figcaption>
+                </figure>  
+        
+            
+            </body>

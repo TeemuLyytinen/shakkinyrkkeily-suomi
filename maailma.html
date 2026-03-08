@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maailmalla ja Suomessa - Shakkinyrkkeily Suomi</title>
+    <style>
+        body{
+            margin: 0;
+            font-family:  Arial, Helvetica, sans-serif;
+            background-color:  black;
+            color:#e6b11d;
+        }
+        
+       .hero {
+           text-align: center;
+           background-color: black;
+           padding:  0;
+           } 
+        
+           .hero img {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }   
+        
+        
+        .hero h1 {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #e6b11d;
+            text-shadow: 0 6px 12px rgba(0,0,0,0.9);
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: none;
+            padding: 10px 15px;
+        }
+        #menu-toggle {
+            display: none; 
+        }
+        .menu {
+            position: fixed; 
+            top: 0;
+            right: -100vw;
+            width: 100%;
+            height: 65vh;
+            background: rgba(0, 0, 0, 0.95);
+            transition: right 0.3s ease;
+            padding-top: 160px;
+        }
+        #menu-toggle:checked ~ .menu {
+            right: 0; 
+        }
+        .menu-icon  {
+            
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            font-size: 3rem;
+            color:#e6b11d;
+            cursor: pointer;
+            z-index: 10;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            background: rgba(0, 0, 0, 0.45);
+            padding: 4px 8px;
+            border-radius: 10px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            margin: 20px 0; 
+        }
+        .menu a {
+            text-decoration: none;
+            color: #e6b11d
+        }
+        figure {
+                margin: 30px auto;
+                text-align: center;
+                max-width: 800px;
+            }
+            figure img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            figcaption {
+                margin-top: 10px;
+                font-size: 1.0rem;
+                color:#e6b11d;
+            }
+                    </style>
+</head>
+
+<body> 
+    
+<header class="hero">
+    <img src="images/chessboxing_main.png"
+    alt="Shakkinyrkkeily"> 
+    <input type="checkbox"
+    id="menu-toggle">
+    <label for="menu-toggle"
+    class="menu-icon">
+        &#9776;
+</label>
+<nav class= "menu">
+    <ul>
+            <li><a href="index.html"> Etusivu</a></li>
+
+            <li><a href="laji.html"> Laji</a></li>
+
+            <li><a href="historia.html"> Historia ja tausta</a></li>
+            
+            <li><a href="maailma.html"> Maailmalla ja Suomessa</a></li>
+            
+            <li><a href="lisätietoa.html"> Lisätietoa</a></li> 
+            
+        </ul>
+        </nav>
+
+        <h1> Shakkinyrkkeily Suomi</h1>  
+        </header> 
+        <main>
+            <section>
+                <h2> Maailmalla</h2> 
+                    <p>
+                        Shakkinyrkkeilyä järjestetään useissa maissa, erityisesti Euroopassa. Laji on ollut näkyvillä
+                        muun muassa Saksassa, Venäjällä, Iso-Britanniassa ja Alankomaissa, joissa on järjestetty
+                        kansainvälisiä tapahtumia ja mestaruusotteluita.
+                    </p>
+                    <p>
+                        Kilpailutoiminta on organisoitu kansainvälisten toimijoiden kautta, ja otteluita käydään sekä 
+                        amatööri- että ammattilaistasolla. Lajin kansainvälinen yhteisö on tiivis ja tapahtumat 
+                        järjestetään usein osana suurempia urheilu- tai kulttuuritapahtumia. 
+                    </p> 
+                    <p> 
+                        Lajin kansainvälistä kilpailutoimintaa on pitkään järjestänyt World Chess Boxing Organization (WCBO).
+                        Myöhemmin lajille on syntynyt myös muita kansainvälisiä organisaatioita kuten vuonna 2013 perustettu
+                        World Chess Boxing Association (WCBA), joka järjestää turnauksia ja maailmanmestaruusotteluita eri 
+                        painoluokissa.
+
+                        
+                         </p>
+                         <p>
+                            Kansainvälisesti tunnetuimpia ottelijoita ovat lajin kehittäjä, WCBO:n perustaja ja ensimmäinen maailmanmestari vuodelta 2003 Iepe Rubingh,
+                            nykyinen raskaansarjan maailmanmestari James Canty III, useita Euroopan mestaruuksia voittanut Frank Stoldt sekä useita 
+                            titteleitä voittanut Nikolai Sazhin.
+                         </p>
+
+                    <h2> Suomessa</h2>
+                    <p>
+                        Suomessa shakkinyrkkeily on toistaiseksi pysynyt pienimuotoisena ilmiönä. Lajia on esitelty 
+                        yksittäisissä tapahtumissa ja mediassa, mutta säännöllinen kotimainen kilpailutoiminta on ollut
+                        vähäistä.
+                    </p>
+                    <p>
+                        Yksi tunnetuimmista suomalaisista lajin edustajista on entinen ammattinyrkkeilijä Sakari Lähderinne,
+                        joka voitti (WCBO) maailmanmestaruuden vuosina 2018 ja 2019 75 kg sarjassa.
+                        Hänen saavutuksensa toi lajille pientä näkyvyyttä myös Suomessa ja osoitti, että suomalaiset kilpailijat
+                        voivat menestyä kansainvälisellä tasolla.
+                    </p>
+                    <p>
+                        Lajin tulevaisuus Suomessa riippuu aktiivisten harrastajien, tapahtumajärjestäjien ja kansainvälisten
+                        yhteyksien kehityksestä.
+                    </p>
+                    <figure>
+                <img src="images/chessboxing2.jpg"
+                alt=" Shakkinyrkkeilyottelu, kilpailijat pelaavat shakkia">
+                        <figcaption>
+                            Kuva: WCBO / Wikimedia Commons (CC By 3.0DE)
+                        </figcaption>
+        </section>
+        </main> 
+            
+            </body>
